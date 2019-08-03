@@ -1,0 +1,21 @@
+<p>resultados works!</p>
+<app-cards-pelicula [ListaDePeliculas]="resultados"></app-cards-pelicula>
+
+
+
+<div class=" equal width grid">
+
+    <button class="btn btn-danger" [disabled]="page == 1"   (click)="ir(-1)">
+        <span class="strong">Previo</span>
+    </button>
+
+
+
+    <label for="">
+        {{page}} / {{ total_pages }}
+    </label>
+
+    <button class="btn btn-danger" [disabled]="page == total_pages"   (click)="ir(1)">
+        <span class="strong">Siguiente</span> 
+    </button>
+</div>

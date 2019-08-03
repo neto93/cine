@@ -1,0 +1,13 @@
+
+        <div class=" card-columns m-1 animated fadeIn">
+            <div (click)="verPelicula(peli)" *ngFor="let peli of ListaDePeliculas" class="card puntero">
+                <img class="card-img-top" [src]="peli | imahen" alt="Card image cap" />
+                <div class="card-body">
+                    <h5 class="card-title">{{ peli.title }}</h5>
+                    <p class="card-text">
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
